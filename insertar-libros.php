@@ -9,17 +9,17 @@
 <form id="formulibro" name="formulibro" method="post">
   <p>
     <label for="Titulo">Titulo:</label>
-    <input type="text" name="Titulo" id="Titulo">
+    <input type="text" name="Titulo" id="Titulo" required>
     <label for="Autor">Autor:</label>
-    <input type="text" name="Autor" id="Autor">
+    <input type="text" name="Autor" id="Autor" required>
     <label for="Genero">Genero:</label>
-    <input type="text" name="Genero" id="Genero">
+    <input type="text" name="Genero" id="Genero" required>
     <label for="Editorial">Editorial:</label>
-    <input type="text" name="Editorial" id="Editorial">
+    <input type="text" name="Editorial" id="Editorial" required>
     <label for="isbn">isbn:</label>
-    <input type="text" name="isbn" id="isbn">
+    <input type="text" name="isbn" id="isbn" required> 
     <label for="Cantidad">Cantidad:</label>
-    <input type="text" name="Cantidad" id="Cantidad">
+    <input type="text" name="Cantidad" id="Cantidad" required>
   </p>
   
   <p>
