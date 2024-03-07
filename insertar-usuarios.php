@@ -9,11 +9,11 @@
 <form id="formulibro" name="formulibro" method="post">
   <p>
     <label for="Nombre">Nombre:</label>
-    <input type="text" name="Nombre" id="Nombre">
+    <input type="text" name="Nombre" id="Nombre" required>
     <label for="Email">Email:</label>
-    <input type="text" name="Email" id="Email">
+    <input type="text" name="Email" id="Email" required>
     <label for="Telefono">Telefono:</label>
-    <input type="text" name="Telefono" id="Telefono">
+    <input type="text" name="Telefono" id="Telefono" required>
   </p>
   
   <p>
