@@ -44,13 +44,15 @@
         $insertarlibro = "INSERT libros (titulo,autor,genero,editorial,isbn,cantidad) 
                             VALUES ('$Titulo','$Autor','$Genero','$Editorial','$isbn','$Cantidad')";
 
-        if (mysqli_query($conn,$insertarlibro)) {
-            echo "Insersión de datos exitosa" . "<br>";
-        } else {
-            echo "No se pudieron insertar los datos" . "<br>";
-        }; 
+        if ($Titulo) {
+            if (mysqli_query($conn,$insertarlibro)) {
+                echo "Insersión de datos exitosa" . "<br>";
+            } else {
+                echo "No se pudieron insertar los datos" . "<br>";
+            }
+        }
         
-        $insertarlibro->close();
+       // $insertarlibro->close();
         
        
         //Ejecutamos la sentencia SQL para usuarios, la ejecutamos y cerramos
@@ -58,16 +60,18 @@
         $insertarusuario = "INSERT usuarios (nombre,email,telefono)
                             VALUES ('$Nombre','$Email','$Telefono')";
 
-        if (mysqli_query($conn,$insertarusuario)) {
+        if ($Nombre) {
+            if (mysqli_query($conn,$insertarusuario)) {
                 echo "Insersión de datos exitosa". "<br>";
-        } else {
+            } else {
                 echo "No se pudieron insertar los datos";
-        };
+            }
+        }
 
-        $insertarusuario->close();
+       // $insertarusuario->close();
         
     //cerrar conexión
-       $con->close();
+       $conn->close();
 
     ?>
 </body>
