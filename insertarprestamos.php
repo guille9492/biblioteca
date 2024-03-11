@@ -13,8 +13,8 @@
   <form id="formuprestamo" name="formuprestamo" method="post">
     <div class="form-group">
      <!-- <label for="id_libro">id_libro:</label>
-    -->
       <input type="text" name ="id_libro" class="form-control" id="id_libro">
+      -->
 
       <?php
           //Variables para la conexión a la base de datos
@@ -55,8 +55,9 @@
 
     <div class="form-group">
       <!--<label for="id_usuario">id_usuario:</label>
-    -->
+    
       <input type="text" class="form-control" id="id_usuario" name="id_usuario">
+      -->
 
       <?php
           //Variables para la conexión a la base de datos
