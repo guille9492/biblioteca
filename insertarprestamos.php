@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
 
 <div class="container mt-5">
   <h2 class="mb-4">Agregar Prestamo</h2>
-  <form id="formuprestamo" name="formuprestamo" method="post">
+  <form id="formuprestamo" name="formuprestamo" method="post" action="procesaprestamo2.php">
     <div class="form-group">
      <!-- <label for="id_libro">id_libro:</label>
       <input type="text" name ="id_libro" class="form-control" id="id_libro">
@@ -103,8 +103,9 @@
       <label for="fecha_devolucion">fecha_devolucion:</label>
       <input type="date" class="form-control" id="fecha_devolucion" name="fecha_devolucion">
     </div>
-
-    <button type="submit" class="btn btn-primary" name="Enviar" id="Enviar" formaction="procesaprestamo2.php">Agregar prestamo</button>
+ 
+    <button type="submit" class="btn btn-primary" name="Enviar" id="Enviar" formaction="procesaprestamo2.php">Agregar prestamo</button>   
+      
   </form>
 </div>
 

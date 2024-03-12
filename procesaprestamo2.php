@@ -13,7 +13,7 @@
         $id_usuario = $_POST["seleccionar"];
         $fecha_prestamo = $_POST["fecha_prestamo"];
         $fecha_devolucion = $_POST["fecha_devolucion"];
-
+        
         //Variables para la conexión a la base de datos
         $servername = 'localhost';
         $username = 'usuario';
@@ -38,15 +38,15 @@
                             VALUES ('$id_libro','$id_usuario','$fecha_prestamo',
                                             '$fecha_devolucion')";
 
-       // if ($id_libro) {
-       //     if (mysqli_query($conn,$insertaprestamo)) {
-          //      echo "Insersión de datos exitosa". "<br>";
-          //  } else {
-            //echo "No se pudieron insertar los datos";
-        //    }
-       // }
+        if ($id_libro and $id_usuario) {
+            if (mysqli_query($conn,$insertaprestamo)) {
+                echo "Insersión de datos exitosa". "<br>";
+            } else {
+            echo "No se pudieron insertar los datos";
+            }
+        }
 
-       mysqli_query($conn,$insertaprestamo);
+       //mysqli_query($conn,$insertaprestamo);
 
        // $insertarusuario->close();
         
